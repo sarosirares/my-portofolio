@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1705418292 source:c:\facultate\cppl\pregatire colocviu\lab1ex6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1705436543 source:c:\facultate\cppl\pregatire colocviu\lab1\lab1ex6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

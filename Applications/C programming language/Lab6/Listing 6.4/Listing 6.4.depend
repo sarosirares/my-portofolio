@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1702039044 source:c:\info\lab6\listing 6.4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"matrix.h"
+
+1702038685 c:\info\lab6\listing 6.4\matrix.h
+	<stdlib.h>
+
+1702039075 source:c:\info\lab6\listing 6.4\matrix.c
+	"matrix.h"
+

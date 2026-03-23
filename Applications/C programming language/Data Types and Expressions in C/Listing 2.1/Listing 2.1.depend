@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1697612587 source:c:\info\data types and expressions in c\listing 2.1\main.c
+	<stdio.h>
+	<limits.h>
+	<float.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1705417222 source:c:\facultate\cppl\pregatire colocviu\lab1\lab1ex4\main.c
+	<stdio.h>
+	<stdlib.h>
+

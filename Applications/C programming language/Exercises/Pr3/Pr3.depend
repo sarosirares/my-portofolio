@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1707092306 source:c:\facultate\cppl\pregatire colocviu\pr3\main.c
+	<stdio.h>
+	<stdlib.h>
+

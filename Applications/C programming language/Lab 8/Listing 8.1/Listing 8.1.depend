@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1705598036 source:c:\info\lab 8\listing 8.1\main.c
+	<stdio.h>
+	<stdlib.h>
+

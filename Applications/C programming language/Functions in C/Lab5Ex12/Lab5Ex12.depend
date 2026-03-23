@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1705533678 source:c:\info\functions in c\lab5ex12\main.c
+	<stdio.h>
+	<math.h>
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+

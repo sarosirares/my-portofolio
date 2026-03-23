@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1697802514 source:c:\info\data types and expressions in c\lab2ex8\main.c
+	<stdio.h>
+	<stdlib.h>
+

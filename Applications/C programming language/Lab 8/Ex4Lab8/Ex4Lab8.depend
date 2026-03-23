@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1707086673 source:c:\info\lab 8\ex4lab8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
