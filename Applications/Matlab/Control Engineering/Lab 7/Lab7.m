@@ -1,0 +1,158 @@
+clc
+clear
+close all
+
+kf = 3.5;
+Tf = 0.5;
+Hf = tf(kf, [Tf, 1, 0]);
+
+%% a)
+clc
+close all
+
+bodemag(Hf), hold on
+
+wf = 1/Tf;
+sigma = 0.15;
+zeta = (abs(log(sigma)))/sqrt((log(sigma))^2+pi^2);
+
+A = 1/4/sqrt(2)/zeta^2;
+AdB = 20*log10(A);
+A = tf(A, 1);
+bodemag(A)
+
+FdB = 1.85;
+FN = abs(AdB) + abs(FdB);
+Vr = 10^(-FN/20);
+Hd = Vr*Hf;
+
+bodemag(Hd)
+
+wc = 1.5;
+wn = 2*zeta*wc;
+ts = 4/wn/zeta;
+
+dwB = wc;
+cvdB = 5.4; %read from 10^-1 and substract 20
+cv = 10^(cvdB/20);
+
+Ho = minreal(Hd/(1+Hd))
+
+figure,
+step(Ho)
+
+t = 0:0.1:50;
+
+figure,
+lsim(Ho, t, t)
+y = lsim(Ho, t, t);
+cv_ramp = 1/(t(end)-y(end))
+
+% to check the closed loop bandwidth
+figure,
+bode(Ho)
+
+%% b)
+
+clc
+close all
+
+bodemag(Hf), hold on
+
+wf = 1/Tf;
+sigma = 0.07;
+zeta = (abs(log(sigma)))/sqrt((log(sigma))^2+pi^2);
+
+A = 1/4/sqrt(2)/zeta^2;
+AdB = 20*log10(A);
+A = tf(A, 1);
+bodemag(A)
+
+FdB = 1.85;
+FN = abs(AdB) + abs(FdB);
+Vr = 10^(-FN/20);
+Hd = Vr*Hf;
+
+bodemag(Hd)
+
+wc = 1.06;
+wn = 2*zeta*wc;
+ts = 4/wn/zeta;
+
+dwB = wc;
+cvdB = 1.5; %read from 10^-1 and substract 20
+cv = 10^(cvdB/20);
+
+Ho = minreal(Hd/(1+Hd))
+
+figure,
+step(Ho)
+
+t = 0:0.1:50;
+
+figure,
+lsim(Ho, t, t)
+y = lsim(Ho, t, t);
+cv_ramp = 1/(t(end)-y(end))
+
+% to check the closed loop bandwidth
+figure,
+bode(Ho)
+
+%% PI
+clc
+close all
+
+bodemag(Hf), hold on
+
+sigma = 0.07;
+cvstar = 5.1;
+
+wf = 1/Tf;
+zeta = (abs(log(sigma)))/sqrt((log(sigma))^2+pi^2);
+
+A = 1/4/sqrt(2)/zeta^2;
+AdB = 20*log10(A);
+A = tf(A, 1);
+bodemag(A)
+% semilogx([0.001, 1], [74.2, 74.2-20-20-20])
+
+wc = 1.06;
+dwB = wc;
+cvdB = 1.5; %read from 10^-1 and substract 20
+cv = 10^(cvdB/20);
+
+wz = 0.1 * wc;
+wp = (cv/cvstar)*wz;
+Tz = 1/wz;
+Tp = 1/wp;
+VrPI = cvstar/cv;
+
+HPI = VrPI * tf([Tz 1], [Tp 1]);
+wn = 2*zeta*wc;
+ts = 4/wn/zeta;
+
+FdB = 1.85;
+FN = abs(AdB) + abs(FdB);
+Vr = 10^(-FN/20);
+Hdold = Vr*Hf;
+Hd = Vr*HPI*Hf;
+
+bodemag(Hdold)    
+bodemag(Hd)
+
+Ho = minreal(Hd/(1+Hd));
+
+figure,
+step(Ho)
+
+t = 0:0.1:50;
+
+figure,
+lsim(Ho, t, t)
+y = lsim(Ho, t, t);
+cv_ramp = 1/(t(end)-y(end));
+
+% to check the closed loop bandwidth
+figure,
+bode(Ho)

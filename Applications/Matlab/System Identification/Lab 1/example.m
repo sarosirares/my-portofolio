@@ -1,0 +1,19 @@
+clc
+clear
+close all
+
+u = [zeros(10, 1); 0.5*ones(1000, 1)]
+[vel, alpha, t] = DCMRun.run(u, 'port', 'COM9', 'Ts', 1e-3, 'type', 'windows');
+plot(t, vel);
+
+%% examples for generating input vectors
+
+clc
+clear
+close all
+
+ustep(4); %generates step signal (first 10 samples are 0)
+urand(1000); %random staircase input vector (width of 100 samples each)
+
+u1 = 0.5*ustep(1000);
+u2 = urand(1000);

@@ -1,0 +1,213 @@
+clc
+clear
+close all
+
+%% a)
+
+% Magnitude criterion
+clc
+
+Hf1 = tf(2, [1 1]);
+
+Tsigma = 1;
+
+Hdstar = tf(1, [2*Tsigma^2, 2*Tsigma 0]);
+
+Hc1 = minreal(Hdstar/Hf);
+
+Ho1 = feedback(Hc1*Hf1, 1);
+figure,
+step(Ho1)
+
+t = 0:0.1:20;
+y1 = lsim(Ho1, t, t);
+cv1 = 1/abs((y(end)-t(end)));
+
+% Symmetrical criterion
+
+HdstarS = tf([4*Tsigma 1], [8*Tsigma^3 8*Tsigma^2 0 0]);
+
+HcS1 = minreal(HdstarS/Hf1);
+
+HoS1 = feedback(HcS1*Hf1, 1);
+figure,
+step(HoS1);
+
+figure,
+lsim(HoS1, t, t);
+cvS1 = 1/abs((y(end)-t(end)));
+
+%% b)
+
+% Magnitude criterion
+clc
+
+Hf2 = tf(2, [1 1 0]);
+
+Tsigma = 1;
+
+Hdstar = tf(1, [2*Tsigma^2, 2*Tsigma 0]);
+
+Hc = minreal(Hdstar/Hf);
+
+Ho = feedback(Hc*Hf, 1);
+figure,
+step(Ho)
+
+t = 0:0.1:20;
+y = lsim(Ho, t, t);
+cv2 = 1/abs((y(end)-t(end)));
+
+% Symmetrical criterion
+
+HdstarS = tf([4*Tsigma 1], [8*Tsigma^3 8*Tsigma^2 0 0]);
+
+HcS = minreal(HdstarS/Hf);
+
+HoS = feedback(HcS*Hf, 1);
+figure,
+step(HoS);
+
+figure,
+lsim(HoS, t, t);
+cvS2 = 1/abs((y(end)-t(end)));
+
+%% c)
+
+% Magnitude criterion
+clc
+
+Hf = tf(2, conv([1 1], [10 1]));
+
+Tsigma = 1;
+
+Hdstar = tf(1, [2*Tsigma^2, 2*Tsigma 0]);
+
+Hc = minreal(Hdstar/Hf);
+
+Ho = feedback(Hc*Hf, 1);
+figure,
+step(Ho)
+
+t = 0:0.1:20;
+y = lsim(Ho, t, t);
+cv3 = 1/abs((y(end)-t(end)));
+
+% Symmetrical criterion
+
+HdstarS = tf([4*Tsigma 1], [8*Tsigma^3 8*Tsigma^2 0 0]);
+
+HcS = minreal(HdstarS/Hf);
+
+HoS = feedback(HcS*Hf, 1);
+figure,
+step(HoS);
+
+figure,
+lsim(HoS, t, t);
+cvS3 = 1/abs((y(end)-t(end)));
+
+%% d)
+
+% Magnitude criterion
+clc
+
+Hf = tf(2, conv([1 1 0], [10 1]));
+
+Tsigma = 1;
+
+Hdstar = tf(1, [2*Tsigma^2, 2*Tsigma 0]);
+
+Hc = minreal(Hdstar/Hf);
+
+Ho = feedback(Hc*Hf, 1);
+figure,
+step(Ho)
+
+t = 0:0.1:20;
+y = lsim(Ho, t, t);
+cv4 = 1/abs((y(end)-t(end)));
+
+% Symmetrical criterion
+
+HdstarS = tf([4*Tsigma 1], [8*Tsigma^3 8*Tsigma^2 0 0]);
+
+HcS = minreal(HdstarS/Hf);
+
+HoS = feedback(HcS*Hf, 1);
+figure,
+step(HoS);
+
+figure,
+lsim(HoS, t, t);
+cvS4 = 1/abs((y(end)-t(end)));
+
+%% e)
+
+% Magnitude criterion
+clc
+
+Hf = tf(2, conv([10 11 1], [10 1]));
+
+Tsigma = 1;
+
+Hdstar = tf(1, [2*Tsigma^2, 2*Tsigma 0]);
+
+Hc = minreal(Hdstar/Hf);
+
+Ho = feedback(Hc*Hf, 1);
+figure,
+step(Ho)
+
+t = 0:0.1:20;
+y = lsim(Ho, t, t);
+cv5 = 1/abs((y(end)-t(end)));
+
+% Symmetrical criterion
+
+HdstarS = tf([4*Tsigma 1], [8*Tsigma^3 8*Tsigma^2 0 0]);
+
+HcS = minreal(HdstarS/Hf);
+
+HoS = feedback(HcS*Hf, 1);
+figure,
+step(HoS);
+
+figure,
+lsim(HoS, t, t);
+cvS5 = 1/abs((y(end)-t(end)));
+
+%% f)
+
+% Magnitude criterion
+clc
+
+Hf = tf(2, conv([10 11 1 0], [10 1]));
+
+Tsigma = 1;
+
+Hdstar = tf(1, [2*Tsigma^2, 2*Tsigma 0]);
+
+Hc = minreal(Hdstar/Hf);
+
+Ho = feedback(Hc*Hf, 1);
+figure,
+step(Ho)
+
+t = 0:0.1:20;
+y = lsim(Ho, t, t);
+cv6 = 1/abs((y(end)-t(end)));
+
+% Symmetrical criterion
+
+HdstarS = tf([4*Tsigma 1], [8*Tsigma^3 8*Tsigma^2 0 0]);
+
+HcS = minreal(HdstarS/Hf);
+
+HoS = feedback(HcS*Hf, 1);
+figure,
+step(HoS);
+
+figure,
+lsim(HoS, t, t);
+cvS6 = 1/abs((y(end)-t(end)));

@@ -1,0 +1,111 @@
+%% Getting data
+
+clc
+close all
+
+load("arxdata_4.mat")
+
+uid = id.InputData{1};
+yid = id.OutputData{1};
+Tsid = id.Ts{1};
+
+uval = val.InputData{1};
+yval = val.OutputData{1};
+Tsval = val.Ts{1};
+
+Ts = Tsval; % Tsid = Tsval
+Nid = length(yid);
+Nval = length(yval);
+
+tid = 0:Ts:Nid*Ts-Ts;
+tval = 0:Ts:Nval*Ts-Ts;
+
+figure,
+subplot(2,1,1), plot(tid, uid), title("Identification Input")
+subplot(2,1,2), plot(tid, yid), title("Identification Output")
+figure,
+subplot(2,1,1), plot(tval, uval), title("Validation Input")
+subplot(2,1,2), plot(tval, yval), title("Validation Output")
+
+%% ARX
+
+clc
+close all
+
+na = 8;
+nb = 8;
+
+PHIid = zeros(Nid, na+nb);
+PHIval = zeros(Nval, na+nb);
+
+for k = 1:Nid
+    for i = 1:na
+        if (k-i) <= 0
+            PHIid(k,i) = 0;
+        else
+            PHIid(k,i) = -yid(k-i);
+        end
+    end
+    for j = 1:nb
+        if (k-j) <= 0
+            PHIid(k,j+na) = 0;
+        else
+            PHIid(k,j+na) = uid(k-j);
+        end
+    end
+end
+
+for k = 1:Nval
+    for i = 1:na
+        if (k-i) <= 0
+            PHIval(k,i) = 0;
+        else
+            PHIval(k,i) = -yval(k-i);
+        end
+    end
+    for j = 1:nb
+        if (k-j) <= 0
+            PHIval(k,j+na) = 0;
+        else
+            PHIval(k,j+na) = uval(k-j);
+        end
+    end
+end
+
+theta = PHIid\yid;
+ypred = PHIval*theta;
+
+ysim = zeros(Nval, 1);
+phisim = zeros(1, na+nb);
+
+for k = 1:Nval
+    for i = 1:na
+        if (k-i) <= 0
+            phisim(k,i) = 0;
+        else
+            phisim(k,i) = -ysim(k-i);
+        end
+    end
+    for j = 1:nb
+        if (k-j) <= 0
+            phisim(k,j+na) = 0;
+        else
+            phisim(k,j+na) = uval(k-j);
+        end
+    end
+    ysim(k) = phisim(k,:)*theta;
+end
+
+figure,
+plot(tval, yval, tval, ysim), legend("yval", "ysim")
+
+%% Comparing with arx function
+
+clc
+close all
+
+model = arx(uid, yid, [na nb, 1]);
+sim = iddata(ysim, uval, Ts);
+pred = iddata(ypred, uval, Ts);
+
+compare(val, sim, pred, model)

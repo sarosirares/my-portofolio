@@ -1,0 +1,58 @@
+clc
+clear
+close all
+
+hold
+semilogx([0.01, 0.1], [20*log10(75/10), 20*log10(75/10)], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([0.1, 1], [20*log10(75/10), 20*log10(75/10)], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([1, 10], [20*log10(75/10), 20*log10(75/10)-20], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([10, 100], [20*log10(75/10)-20, 20*log10(75/10)-60], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([100, 1000], [20*log10(75/10)-60, 20*log10(75/10)-100], '-o', 'LineWidth', 2, 'Color', 'r');
+H = zpk([], [-1, 10], -75);
+bodemag(H); grid; shg; hold;
+
+%% f'
+
+close all
+
+hold
+semilogx([0.1, 3], [20*log10(20/45), 20*log10(20/45)], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([3, 15], [20*log10(20/45), 20*log10(20/45) + (-20)*(log10(15/3))], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([15, 100], [20*log10(20/45) + (-20)*(log10(15/3)), 20*log10(20/45) + (-20)*(log10(15/3)) + (-40)*(log10(100/15))], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([100, 1000], [20*log10(20/45) + (-20)*(log10(15/3)) + (-40)*(log10(100/15)), 20*log10(20/45) + (-20)*(log10(15/3)) + (-40)*(log10(100/15))-40], '-o', 'LineWidth', 2, 'Color', 'r');
+
+H1 = zpk([], [-3, -15], 20);
+bodemag(H1); grid; shg; hold;
+
+%% f''
+
+close all
+
+hold
+semilogx([0.01, 0.1], [20*log10(16/45), 20*log10(16/45)], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([0.1, 0.8], [20*log10(16/45), 20*log10(16/45)], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([0.8, 3], [20*log10(16/45), 20*log10(16/45) + 20*(log10(3/0.8))], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([3, 15], [20*log10(16/45) + 20*(log10(3/0.8)), 20*log10(16/45) + 20*(log10(3/0.8)) + (0)*(log10(15/3))], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([15, 100], [20*log10(16/45) + 20*(log10(3/0.8)) + (0)*(log10(15/3)), 20*log10(16/45) + 20*(log10(3/0.8)) + (0)*(log10(15/3)) + (-20)*(log10(100/15))], '-o', 'LineWidth', 2, 'Color', 'r');
+semilogx([100, 1000], [20*log10(16/45) + 20*(log10(3/0.8)) + (0)*(log10(15/3)) + (-20)*(log10(100/15)), 20*log10(16/45) + 20*(log10(3/0.8)) + (0)*(log10(15/3)) + (-20)*(log10(100/15)) + (-20)*(log10(1000/100))], '-o', 'LineWidth', 2, 'Color', 'r');
+
+H2 = zpk([-0.8], [-3, -15], 20);
+bodemag(H2); grid; shg; hold;
+
+%% test
+
+close all
+
+w = [0.01, 0.8, 3, 15, 1000];
+s = [0, 20, 0, -20];
+kdb = 20*log10(16/45);
+
+hold
+for i = 1:length(w)-1
+    kdbdiff = s(i)*log10(w(i+1)/w(i));
+    semilogx([w(i), w(i+1)], [kdb, kdb + kdbdiff], '-o', 'LineWidth', 2, 'Color', 'r');
+    kdb = kdb + kdbdiff;
+end
+
+H2 = zpk([-0.8], [-3, -15], 20);
+bodemag(H2); grid; shg; hold;
