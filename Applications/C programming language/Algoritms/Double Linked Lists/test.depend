@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1729690125 source:c:\facultate\anul 2\ad\test\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1729751550 source:c:\facultate\anul 2\ad\double linked lists\main.c
+	<stdio.h>
+	<stdlib.h>
+

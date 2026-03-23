@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1732170016 source:c:\facultate\anul 2\ad\hashtables\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
