@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Complex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|solutionrelative:Complex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|solutionrelative:Source2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|solutionrelative:Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Punct.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|solutionrelative:Punct.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Punct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|solutionrelative:Punct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|solutionrelative:Source3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Complex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AE07E4B8-E92C-45DD-81BB-88DC53B8790C}|Exam.vcxproj|solutionrelative:Complex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source2.cpp",
+              "DocumentMoniker": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source2.cpp",
+              "RelativeDocumentMoniker": "Source2.cpp",
+              "ToolTip": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source2.cpp",
+              "RelativeToolTip": "Source2.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-23T16:13:31.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source1.cpp",
+              "DocumentMoniker": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source1.cpp",
+              "RelativeDocumentMoniker": "Source1.cpp",
+              "ToolTip": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source1.cpp",
+              "RelativeToolTip": "Source1.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-23T16:13:27.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Complex.h",
+              "DocumentMoniker": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Complex.h",
+              "RelativeDocumentMoniker": "Complex.h",
+              "ToolTip": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Complex.h",
+              "RelativeToolTip": "Complex.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-23T16:13:21.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Complex.cpp",
+              "DocumentMoniker": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Complex.cpp",
+              "RelativeDocumentMoniker": "Complex.cpp",
+              "ToolTip": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Complex.cpp",
+              "RelativeToolTip": "Complex.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-23T16:13:21.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Punct.cpp",
+              "DocumentMoniker": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Punct.cpp",
+              "RelativeDocumentMoniker": "Punct.cpp",
+              "ToolTip": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Punct.cpp",
+              "RelativeToolTip": "Punct.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-23T16:13:21.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Punct.h",
+              "DocumentMoniker": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Punct.h",
+              "RelativeDocumentMoniker": "Punct.h",
+              "ToolTip": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Punct.h",
+              "RelativeToolTip": "Punct.h",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAwCYAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-23T16:13:21.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Source3.cpp",
+              "DocumentMoniker": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source3.cpp",
+              "RelativeDocumentMoniker": "Source3.cpp",
+              "ToolTip": "C:\\Facultate\\Facultate\\Anul 1\\Sem2\\AI\\Exam\\Source3.cpp",
+              "RelativeToolTip": "Source3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-23T16:13:21.558Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

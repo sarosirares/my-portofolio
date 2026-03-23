@@ -1,0 +1,7 @@
+C:\Facultate\Sem2\AI\Lab5\Lab5tema\Lab5tema\obj\Debug\Lab5tema.csproj.AssemblyReference.cache
+C:\Facultate\Sem2\AI\Lab5\Lab5tema\Lab5tema\obj\Debug\Lab5tema.csproj.CoreCompileInputs.cache
+C:\Facultate\Sem2\AI\Lab5\Lab5tema\Lab5tema\bin\Debug\Lab5tema.exe.config
+C:\Facultate\Sem2\AI\Lab5\Lab5tema\Lab5tema\bin\Debug\Lab5tema.exe
+C:\Facultate\Sem2\AI\Lab5\Lab5tema\Lab5tema\bin\Debug\Lab5tema.pdb
+C:\Facultate\Sem2\AI\Lab5\Lab5tema\Lab5tema\obj\Debug\Lab5tema.exe
+C:\Facultate\Sem2\AI\Lab5\Lab5tema\Lab5tema\obj\Debug\Lab5tema.pdb

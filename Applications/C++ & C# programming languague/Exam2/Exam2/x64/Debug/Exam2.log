@@ -1,0 +1,5 @@
+﻿  Classes.cpp
+  Source.cpp
+C:\Facultate\Sem2\AI\Exam2\Source.cpp(7,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  Exam2.vcxproj -> C:\Facultate\Sem2\AI\Exam2\x64\Debug\Exam2.exe

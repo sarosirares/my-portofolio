@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|c:\\facultate\\sem2\\ai\\lab5\\lab5tema\\lab5tema\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|solutionrelative:lab5tema\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\lab5tema\\active.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|solutionrelative:lab5tema\\active.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\lab5tema\\pro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|solutionrelative:lab5tema\\pro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\lab5tema\\sport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|solutionrelative:lab5tema\\sport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\lab5tema\\activities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|solutionrelative:lab5tema\\activities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\lab5tema\\health_diet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|solutionrelative:lab5tema\\health_diet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\lab5tema\\retired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F2268-15A5-4139-A6F2-719615AA986F}|Lab5tema\\Lab5tema.csproj|solutionrelative:lab5tema\\retired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Program.cs",
+              "RelativeDocumentMoniker": "Lab5tema\\Program.cs",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Program.cs",
+              "RelativeToolTip": "Lab5tema\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T00:36:14.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sport.cs",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Sport.cs",
+              "RelativeDocumentMoniker": "Lab5tema\\Sport.cs",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Sport.cs",
+              "RelativeToolTip": "Lab5tema\\Sport.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA8wAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T00:36:38.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Activities.cs",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Activities.cs",
+              "RelativeDocumentMoniker": "Lab5tema\\Activities.cs",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Activities.cs",
+              "RelativeToolTip": "Lab5tema\\Activities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:34:42.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Health_Diet.cs",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Health_Diet.cs",
+              "RelativeDocumentMoniker": "Lab5tema\\Health_Diet.cs",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Health_Diet.cs",
+              "RelativeToolTip": "Lab5tema\\Health_Diet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:16:37.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Retired.cs",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Retired.cs",
+              "RelativeDocumentMoniker": "Lab5tema\\Retired.cs",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Retired.cs",
+              "RelativeToolTip": "Lab5tema\\Retired.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:21:30.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Active.cs",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Active.cs",
+              "RelativeDocumentMoniker": "Lab5tema\\Active.cs",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Active.cs",
+              "RelativeToolTip": "Lab5tema\\Active.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:24:11.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pro.cs",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Pro.cs",
+              "RelativeDocumentMoniker": "Lab5tema\\Pro.cs",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\Lab5\\Lab5Tema\\Lab5tema\\Pro.cs",
+              "RelativeToolTip": "Lab5tema\\Pro.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:31:03.452Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

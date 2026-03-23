@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Facultate\\Sem2\\AI\\exam3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{100EABA9-C510-457B-AA54-4B3A1BBDA813}|exam3.vcxproj|C:\\Facultate\\Sem2\\AI\\exam3\\Punct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{100EABA9-C510-457B-AA54-4B3A1BBDA813}|exam3.vcxproj|solutionrelative:Punct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Punct.h",
+              "DocumentMoniker": "C:\\Facultate\\Sem2\\AI\\exam3\\Punct.h",
+              "RelativeDocumentMoniker": "Punct.h",
+              "ToolTip": "C:\\Facultate\\Sem2\\AI\\exam3\\Punct.h",
+              "RelativeToolTip": "Punct.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-03T05:47:20.958Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
