@@ -1,0 +1,132 @@
+
+Lab1 IO.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000094  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000000e8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  000000e8  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000118  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000154  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000058d  00000000  00000000  00000174  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000508  00000000  00000000  00000701  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000001f3  00000000  00000000  00000c09  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  00000dfc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000002d4  00000000  00000000  00000e20  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000055  00000000  00000000  000010f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00001149  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 36 00 	call	0x6c	; 0x6c <main>
+  64:	0c 94 48 00 	jmp	0x90	; 0x90 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <main>:
+
+//Ex3
+
+int main(void)
+{
+	DDRD |= 0b11111111;				//setare PDall iesire
+  6c:	81 b3       	in	r24, 0x11	; 17
+  6e:	8f ef       	ldi	r24, 0xFF	; 255
+  70:	81 bb       	out	0x11, r24	; 17
+	DDRB &= ~(1<<2);				//setare PB2 intrare
+  72:	87 b3       	in	r24, 0x17	; 23
+  74:	8b 7f       	andi	r24, 0xFB	; 251
+  76:	87 bb       	out	0x17, r24	; 23
+	uint8_t state_PB2 = 0;			//variabila de stare (tine minte starea anterioara a pinului)
+	uint8_t contor = 0;
+  78:	80 e0       	ldi	r24, 0x00	; 0
+
+int main(void)
+{
+	DDRD |= 0b11111111;				//setare PDall iesire
+	DDRB &= ~(1<<2);				//setare PB2 intrare
+	uint8_t state_PB2 = 0;			//variabila de stare (tine minte starea anterioara a pinului)
+  7a:	90 e0       	ldi	r25, 0x00	; 0
+	uint8_t contor = 0;
+	
+	while (1)
+	{
+		if(PINB & (1<<2))			//testare PB2
+  7c:	b2 9b       	sbis	0x16, 2	; 22
+  7e:	05 c0       	rjmp	.+10     	; 0x8a <main+0x1e>
+		{
+			if(state_PB2 == 0)		//daca starea anterioara a pinului a fost 0
+  80:	91 11       	cpse	r25, r1
+  82:	04 c0       	rjmp	.+8      	; 0x8c <main+0x20>
+			{
+				state_PB2 = 1;
+				contor++;
+  84:	8f 5f       	subi	r24, 0xFF	; 255
+	{
+		if(PINB & (1<<2))			//testare PB2
+		{
+			if(state_PB2 == 0)		//daca starea anterioara a pinului a fost 0
+			{
+				state_PB2 = 1;
+  86:	91 e0       	ldi	r25, 0x01	; 1
+  88:	01 c0       	rjmp	.+2      	; 0x8c <main+0x20>
+				contor++;
+			}
+		}
+		else
+			state_PB2 = 0;
+  8a:	90 e0       	ldi	r25, 0x00	; 0
+			
+		PORTD = contor;
+  8c:	82 bb       	out	0x12, r24	; 18
+	}
+  8e:	f6 cf       	rjmp	.-20     	; 0x7c <main+0x10>
+
+00000090 <_exit>:
+  90:	f8 94       	cli
+
+00000092 <__stop_program>:
+  92:	ff cf       	rjmp	.-2      	; 0x92 <__stop_program>

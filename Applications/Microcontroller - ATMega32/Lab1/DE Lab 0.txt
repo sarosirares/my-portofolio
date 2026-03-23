@@ -1,0 +1,10 @@
+- rezumat la 2 capitole pe laboratorul viitor
+- Atmega32 8 bit Arhitecture - BUS
+			     - ALU / UAL
+			     - REGISTERS
+			       MEM -> 8 bit
+			       NAME -> DDR
+				    -> PORT
+				    -> OCR
+				    -> TCCN
+a, b - 8 bit
