@@ -1,0 +1,456 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/OldPlywood.proto"
+EXTERNPROTO "../protos/SolidBox.proto"
+EXTERNPROTO "../protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/k-team/khepera3/protos/Khepera3_Gripper.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.08808675876234513 -0.0854821752104417 0.992438169687178 4.674825028795598
+  position 0.8974462134630706 6.97577783891727 2.064159645248512
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -0.13 -2.53 0
+  floorSize 10 1.3
+}
+SolidBox {
+  translation 4.370000037377389 -2.4123300063409974 0.09959290718005634
+  rotation -6.350001775082359e-08 0.9994118169065829 -0.034293151320322166 3.704439318997246e-06
+  name "red"
+  size 0.05 0.05 0.05
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "34.png"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    1 0 0
+  ]
+}
+Wall {
+  translation -0.119995 -3.15998 0
+  rotation 0 0 1 1.5708
+  size 0.1 10 2.4
+  appearance Roughcast {
+    colorOverride 1 0.5 0.6
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Robot {
+  translation 4.695192545394749 -2.1565046371403502 -0.0006183540269332349
+  rotation -0.020275540612872414 2.4294932959406804e-05 0.9997944298017529 3.1415262941519306
+  children [
+    DEF BASE Khepera3_Gripper {
+      hidden position_0_0 0.0011384858734119737
+      hidden position_0_1 5.358529381167482e-07
+      hidden position_0_2 9.48963743319741e-05
+      hidden translation_1 1.484438225497764e-05 3.469446951953614e-17 -7.740859769340448e-05
+      hidden rotation_1 0.5775692461946129 -0.5775692462334627 -0.5769120657912227 2.095052429800273
+      hidden position_1_0 -0.006880243820003529
+      hidden translation_2 6.966095374150161e-09 -4.163336342344337e-17 -2.6792645064360743e-08
+      hidden rotation_2 0.5773503723145378 -0.5773503723145563 -0.577350062939728 2.0943953093748657
+      hidden position_2_0 -0.005741932676447191
+      hidden translation_3 0 -4.770167460101116e-05 0.00038484749658645144
+      hidden rotation_3 -1 0 0 0.0057419326764663195
+      hidden position_3_0 -1.312604643921874e-05
+      hidden position_3_1 -9.698561181592111e-06
+      hidden position_3_2 1.3127698089920803e-05
+      hidden position_3_3 9.699733297352654e-06
+      hidden translation_4 -4.594136067646859e-07 4.85722573273506e-16 3.0189605287195276e-07
+      hidden rotation_4 0 -1 0 1.3126053890874715e-05
+      hidden position_4_0 3.4278167510829312e-06
+      hidden translation_5 2.0909653986739274e-07 1.6653345369377348e-16 -1.6453556233447797e-07
+      hidden rotation_5 0 0.9999999999999999 0 3.427785336659201e-06
+      hidden translation_6 -3.394500175824683e-07 6.938893903907228e-17 7.758684351238943e-08
+      hidden rotation_6 0 -1 0 9.698538413601629e-06
+      hidden position_6_0 1.727265313482743e-09
+      hidden translation_7 4.5947141500898847e-07 2.914335439641036e-16 3.0193404013112435e-07
+      hidden rotation_7 0 1 0 1.3127711586133846e-05
+      hidden position_7_0 -3.4283149573411203e-06
+      hidden translation_8 -2.0912693053654063e-07 -2.7755575615628914e-16 -1.6455947602495025e-07
+      hidden rotation_8 0 -1 0 3.4283035203865243e-06
+      hidden translation_9 3.394910417890695e-07 3.3306690738754696e-16 7.759621974134934e-08
+      hidden rotation_9 0 1 0 9.699728862139327e-06
+      hidden position_9_0 1.7327294039477026e-09
+      hidden translation_10 2.4675668836848796e-06 0 -5.503872633656759e-06
+      hidden rotation_10 0.5773685311377825 -0.5773685311410206 -0.5773137435570539 2.0944497893137743
+      hidden position_10_0 -0.005836654024569518
+    }
+    Pose {
+      translation 0 0 0.0415
+      rotation 0 0 1 -1.570796
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.0820075 0.364731 0.8
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BODY Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 459.67682190627403
+        axis 0 1 0
+        anchor 0 0 0.025
+      }
+      device [
+        RotationalMotor {
+          name "left wheel motor"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "left wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -7.400432472475507e-06 0.04500288297707602 0.024995905525417257
+        rotation -0.33695874095561873 0.33696074976219553 -0.8791565617188459 1.6992371565430882
+        children [
+          DEF WHEEL Pose {
+            rotation 0.577656895078166 0.5771968951617173 -0.5771968951617173 -2.093935
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0 0
+                  roughness 1
+                  metalness 0
+                }
+                geometry Cylinder {
+                  height 0.01
+                  radius 0.025
+                }
+              }
+            ]
+          }
+        ]
+        name "left wheel"
+        boundingObject USE WHEEL
+        physics DEF PHYSICS_WHEEL Physics {
+          density -1
+          mass 0.05
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 1195.9795121792665
+        axis 0 1 0
+        anchor 0 0 0.025
+      }
+      device [
+        RotationalMotor {
+          name "right wheel motor"
+          consumptionFactor 70
+        }
+        PositionSensor {
+          name "right wheel sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0 -0.044999999999998576 0.025
+        rotation -0.6741026480498612 0.6741025899094444 -0.30194588616098833 2.5551106022471455
+        children [
+          USE WHEEL
+        ]
+        name "right wheel"
+        boundingObject USE WHEEL
+        physics USE PHYSICS_WHEEL
+      }
+    }
+    DistanceSensor {
+      translation 0.042 0.02 0.063
+      rotation 0 0 -1 -0.499205
+      children [
+        DEF SENSOR Pose {
+          rotation 0.577656895078166 0.5771968951617173 -0.5771968951617173 -2.093935
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.975691 0.981481 0.0252992
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.004
+                radius 0.008
+              }
+            }
+          ]
+        }
+      ]
+      name "ds0"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DistanceSensor {
+      translation 0.042 -0.02 0.063
+      rotation 0 0 1 -0.500795
+      children [
+        USE SENSOR
+      ]
+      name "ds1"
+      lookupTable [
+        0 1024 0
+        0.05 1024 0
+        0.15 0 0
+      ]
+      numberOfRays 2
+      aperture 1
+    }
+    DEF SMILE Pose {
+      translation 0.036 0 0.025
+      rotation 0.25056300542381216 -0.9351130202419243 -0.25056300542381216 1.637834
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.721569 0.290196 0.290196
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.018
+            radius 0.009
+            subdivision 3
+          }
+        }
+      ]
+    }
+    Camera {
+      translation -1.10196e-07 0.03 0.0915
+      rotation 0 0 -1 -1.55
+      children [
+        Pose {
+          translation -0.015 0 0
+          rotation -0.5771968951617173 -0.577656895078166 -0.5771968951617173 -2.093935
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.03
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+      recognitionColors [
+        0 0 0
+      ]
+      fieldOfView 1
+      width 640
+      height 640
+      antiAliasing TRUE
+      noise 0.04
+      recognition Recognition {
+        frameColor 1 0.6 0
+        frameThickness 5
+        segmentation TRUE
+      }
+    }
+    Camera {
+      translation 0.0693609 -0.0014489 0.0915
+      rotation 0 0 1 -0.02079530717958633
+      children [
+        Pose {
+          translation -0.015 0 0
+          rotation -0.5771968951617173 -0.577656895078166 -0.5771968951617173 -2.093935
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.03
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+      name "camera(1)"
+      recognitionColors [
+        0 0 0
+      ]
+      fieldOfView 1
+      width 640
+      height 640
+      antiAliasing TRUE
+      noise 0.04
+      recognition Recognition {
+        frameColor 1 0.6 0
+        frameThickness 5
+        segmentation TRUE
+      }
+    }
+  ]
+  name "MyBot"
+  boundingObject Pose {
+    translation 0 0 0.0415
+    rotation 0 0 1 -1.570796
+    children [
+      USE BODY
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 0.5
+  }
+  controller "robot"
+}
+Wall {
+  translation 0.37 -2.74 -6.74634e-14
+  rotation 0 1 0 1.5708
+  name "wall(1)"
+  size 0.1 0.9 4.5
+  appearance Roughcast {
+    colorOverride 0.2 0.3 0.2
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation -4.13 -2.74 1.65247e-05
+  rotation 0 1 0 1.5708
+  name "wall(2)"
+  size 0.1 0.9 4.5
+  appearance Roughcast {
+    colorOverride 0.2 0.3 0.2
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+SolidBox {
+  translation 3.0836096029118267 -2.412356103900276 0.09959763235596515
+  rotation -1.8511297348051307e-06 0.000735636662680577 -0.9999997294176004 0.005032719009039436
+  name "green"
+  size 0.05 0.05 0.05
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "52.png"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    0 1 0
+  ]
+}
+SolidBox {
+  translation 2.399940351934069 -2.412333859170117 0.09960014361334685
+  rotation 1.8505796053092197e-06 0.02440561795933519 0.9997021385435756 0.00015169705718242658
+  name "pink"
+  size 0.05 0.05 0.05
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "27.png"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    1 0 1
+  ]
+}
+SolidBox {
+  translation 1.6999403518548728 -2.412333001203549 0.0996027148569195
+  rotation 1.850578530276746e-06 0.024405306620035393 0.999702146144219 0.00015169899239103312
+  name "cyan"
+  size 0.05 0.05 0.05
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "18.png"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    0 1 1
+  ]
+}
+SolidBox {
+  translation 0.9699413497511011 -2.4123113861348524 0.0996053962929795
+  rotation 1.8505790820555252e-06 0.024401117413571198 0.9997022484047661 0.00015172503621387078
+  name "yellow"
+  size 0.05 0.05 0.05
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "45.png"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    1 1 0
+  ]
+}
+SolidBox {
+  translation 3.739940352036705 -2.412334974850897 0.09959522151850798
+  rotation 1.8505789567126506e-06 0.024406023659851166 0.9997021286391714 0.00015169453552852974
+  name "blue"
+  size 0.05 0.05 0.05
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "6 (1).png"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    0 0 1
+  ]
+}
